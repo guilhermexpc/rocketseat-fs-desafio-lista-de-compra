@@ -12,6 +12,8 @@
 
     <title>Quicklist - Lista de compras</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <script src="script.js" defer></script>
+
   </head>
   <body>
     <header class="container">
@@ -26,7 +28,7 @@
     </header>
 
     <main class="container">
-      <form class="main-form content" action="#" method="post">
+      <form class="main-form content">
         <fieldset id="list-new-item">
           <input type="text" id="list-name" class="input" placeholder="Adicione um novo item" />
           <button class="button" type="submit">
@@ -40,7 +42,7 @@
               <input type="checkbox" id="list-item-1" name="list-item" />
               <label for="list-item-1">Pão de forma</label>
             </div>
-            <button class="buton" type="button">
+            <button class="buton" id="btn-new-item" type="submit">
               <img src="assets/icons/trashicon.svg" alt="" />
             </button>
           </div>

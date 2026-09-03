@@ -119,16 +119,16 @@ ul[role="list"] {
   /* background-color: rgb(211, 211, 211); */
 }
 
-/* 85.375em */
+
 @media (width >= 85.375em) {
   .container {
-    --max-width: 80em;
+    --max-width: 85.375em;
   }
 
   .content {
     width: 39.1875rem;
     margin-inline: auto;
-    background-color: rgba(211, 211, 211, 0.64);
+    /* background-color: rgba(211, 211, 211, 0.64); */
   }
 
   .desktop-only {

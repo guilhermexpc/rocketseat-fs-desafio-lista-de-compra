@@ -68,9 +68,9 @@ input[type="checkbox"] {
     display: flex;
     gap: 0.75rem;
     margin-right: auto;
-
     label {
       font: var(--font-md);
+      cursor: pointer
     }
   }
 
