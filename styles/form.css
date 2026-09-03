@@ -1,0 +1,46 @@
+fieldset {
+  border: none;
+}
+
+.main-form {
+  margin-top: 2.75rem;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  appearance: none;
+  width: 100%;
+  max-height: 2.75rem;
+  border-radius: 0.75rem;
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--border-primary);
+  padding: 0.6875rem 1.125rem;
+  font-family: var(--ff-main);
+  font-size: var(--fs-bs);
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--content-primary);
+
+  &:hover {
+    border-color: var(--border-primary-hover);
+  }
+
+  &:focus {
+    border-color: var(--color-brand);
+  }
+
+  &:focus-visible {
+    outline-color: var(--color-brand);
+  }
+}
+
+input::placeholder {
+  color: var(--content-tertiary);
+}

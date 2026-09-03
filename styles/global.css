@@ -22,8 +22,8 @@
   --content-secondary: #374151;
   --content-tertiary: #9ca3af;
   --content-alwals-white: #ffffff;
-  --border-primary: #9ca3af;
-  --border-primary-hover: #ffffff;
+  --border-primary: #d1d5db;
+  --border-primary-hover: #b9c2d0;
 
   --ff-main: "Inter", system-ui, sans-serif;
   font-size: 100%;
@@ -107,13 +107,16 @@ ul[role="list"] {
 
 .container {
   --max-width: 390px;
-  width: min(var(--max-width), 100% - var(--px-bs) * 2);
+  /* width: min(var(--max-width), calc(100% - var(--px-bs) * 2)); */
+  width: 100%;
+  max-width: var(--max-width);
   background-color: var(--bg-primary);
   margin-inline: auto;
 }
 
 .content {
-  max-width: 100%;
+  padding-inline: var(--px-bs);
+  /* background-color: rgb(211, 211, 211); */
 }
 
 /* 85.375em */
