@@ -44,3 +44,40 @@ input[type="text"] {
 input::placeholder {
   color: var(--content-tertiary);
 }
+
+#list-items {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.card-list-item {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid var(--border-primary); */
+  border-radius: 0.75rem;
+  background-color: var(--bg-secondary);
+  padding: 0.75rem;
+
+  .item-checkbox {
+    display: flex;
+    gap: 0.75rem;
+    margin-right: auto;
+
+    label {
+      font: var(--font-md);
+    }
+  }
+
+  img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}

@@ -37,7 +37,7 @@
   --fw-bd: 700;
 
   --font-lg: var(--fw-bd) var(--fs-lg)/32px var(--ff-main);
-  --font-md: var(--fw-sb) var(--fs-bs)/20px var(--ff-main);
+  --font-md: var(--fw-sb) var(--fs-bs)/24px var(--ff-main);
   --font-bs: var(--fw-bs) var(--fs-bs)/20px var(--ff-main);
   --font-sm: var(--fw-bs) var(--fs-sm)/16px var(--ff-main);
 

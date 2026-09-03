@@ -1,6 +1,7 @@
 header {
   margin-top: 2rem;
   margin-top: 4.875rem;
+
   img#logo {
     width: 155.51px;
     height: 40px;
@@ -11,7 +12,7 @@ header {
     margin-top: 4rem;
     display: flex;
     align-items: center;
-
+    gap: 0.3rem;
     img {
       width: 16px;
       height: 16px;
