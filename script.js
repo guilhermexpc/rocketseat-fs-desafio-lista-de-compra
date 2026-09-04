@@ -11,8 +11,9 @@ console.log("aq");
 console.log(alertboxButton);
 
 input.addEventListener("input", () => {
-  // console.log(input.value);
-  console.log(validateItemName(input.value));
+  const regex = /^[A-Za-z].*$/g;
+  const regex2 = /[^a-zA-Z ]/g;
+  input.value = input.value.replace(regex2, "");
 });
 
 form.addEventListener("submit", (event) => {
@@ -34,7 +35,7 @@ alertboxButton.addEventListener("click", () => {
 
 function addNewListItem() {
   const itemName = input.value.trim();
-  console.log(validateItemName(itemName));
+  // console.log(validateItemName(itemName));
   if (!itemName) {
     return;
   }
@@ -95,6 +96,7 @@ function removeListItem(button) {
 
 function validateItemName(itemName) {
   const regex = /^[A-Za-z].*$/g;
+  return String(itemName).replace();
   return regex.test(itemName);
 }
 
