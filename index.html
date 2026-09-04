@@ -13,7 +13,6 @@
     <title>Quicklist - Lista de compras</title>
     <link rel="stylesheet" href="styles/index.css" />
     <script src="script.js" defer></script>
-
   </head>
   <body>
     <header class="container">
@@ -39,50 +38,52 @@
         <fieldset id="list-items">
           <div class="card-list-item">
             <div class="item-checkbox">
-              <input type="checkbox" id="list-item-1" name="list-item" />
-              <label for="list-item-1">Pão de forma</label>
+              <input type="checkbox" id="input-item-1" name="list-item" />
+              <label for="input-item-1">Pão de forma</label>
             </div>
-            <button class="buton" id="btn-new-item" type="submit">
+            <button class="buton" type="submit" id="btn-item-1">
               <img src="assets/icons/trashicon.svg" alt="" />
             </button>
           </div>
 
           <div class="card-list-item">
             <div class="item-checkbox">
-              <input type="checkbox" id="list-item-2" name="list-item" />
-              <label for="list-item-2">Café preto</label>
+              <input type="checkbox" id="input-item-2" name="list-item" />
+              <label for="input-item-2">Café preto</label>
             </div>
-            <button class="buton" type="button">
+            <button class="buton" type="button" id="btn-item-2">
               <img src="assets/icons/trashicon.svg" alt="" />
             </button>
           </div>
 
           <div class="card-list-item">
             <div class="item-checkbox">
-              <input type="checkbox" id="list-item-3" name="list-item" />
-              <label for="list-item-3">Suco de laranja</label>
+              <input type="checkbox" id="input-item-3" name="list-item" />
+              <label for="input-item-3">Suco de laranja</label>
             </div>
-            <button class="buton" type="button">
+            <button class="buton" type="button" id="btn-item-3">
               <img src="assets/icons/trashicon.svg" alt="" />
             </button>
           </div>
 
           <div class="card-list-item">
             <div class="item-checkbox">
-              <input type="checkbox" id="list-item-4" name="list-item" />
-              <label for="list-item-4">Bolacha</label>
+              <input type="checkbox" id="input-item-4" name="list-item" />
+              <label for="input-item-4">Bolacha</label>
             </div>
-            <button class="buton" type="button">
+            <button class="" type="button" id="btn-item-4">
               <img src="assets/icons/trashicon.svg" alt="" />
             </button>
           </div>
         </fieldset>
-        <div class="alertbox">
+        <div class="alertbox hidden">
           <div>
             <img src="assets/icons/warning-circle-filled.svg" alt="" />
             <span>O item foi removido da lista</span>
           </div>
-          <img src="assets/icons/delete-small.svg" alt="" />
+          <button class="" type="button" id="btn-item-4">
+            <img src="assets/icons/delete-small.svg" alt="" />
+          </button>
         </div>
       </form>
     </main>

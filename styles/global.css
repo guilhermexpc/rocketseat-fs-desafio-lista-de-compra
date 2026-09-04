@@ -101,7 +101,7 @@ ul[role="list"] {
   display: none;
 }
 
-.hidden {
+div.hidden {
   display: none;
 }
 
@@ -118,7 +118,6 @@ ul[role="list"] {
   padding-inline: var(--px-bs);
   /* background-color: rgb(211, 211, 211); */
 }
-
 
 @media (width >= 85.375em) {
   .container {
