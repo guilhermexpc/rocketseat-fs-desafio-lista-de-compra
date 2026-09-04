@@ -1,6 +1,5 @@
 header {
   margin-top: 2rem;
-  margin-top: 4.875rem;
 
   img#logo {
     width: 155.51px;
@@ -9,7 +8,7 @@ header {
     margin-inline: auto;
   }
   & nav {
-    margin-top: 4rem;
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     gap: 0.3rem;
@@ -28,6 +27,7 @@ header {
 @media (width >= 85.375em) {
   header {
     & nav {
+      margin-top: 4rem;
     }
   }
 }

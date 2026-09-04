@@ -11,14 +11,12 @@ console.log("aq");
 console.log(alertboxButton);
 
 input.addEventListener("input", () => {
-  const regex = /^[A-Za-z].*$/g;
-  const regex2 = /[^a-zA-Z ]/g;
-  input.value = input.value.replace(regex2, "");
+  input.classList.remove("invalid");
+  input.removeAttribute("aria-invalid");
 });
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  console.log("Evento acionado");
   addNewListItem();
 });
 
@@ -35,8 +33,10 @@ alertboxButton.addEventListener("click", () => {
 
 function addNewListItem() {
   const itemName = input.value.trim();
-  // console.log(validateItemName(itemName));
-  if (!itemName) {
+  if (!validateItemName(itemName)) {
+    input.classList.add("invalid");
+    input.setAttribute("aria-invalid", "true");
+    showAlert("Digite um item usando apenas letras e espaços.");
     return;
   }
   listNumber += 1;
@@ -95,16 +95,20 @@ function removeListItem(button) {
 }
 
 function validateItemName(itemName) {
-  const regex = /^[A-Za-z].*$/g;
-  return String(itemName).replace();
+  const regex = /^[\p{L}]+(?: [\p{L}]+)*$/u;
   return regex.test(itemName);
 }
 
 function removeHiddenClass(element) {
-  element.classList.remove("hidden");
+  showAlert("O item foi removido da lista.");
+}
+
+function showAlert(message) {
+  alertbox.querySelector("span").textContent = message;
+  alertbox.classList.remove("hidden");
 
   clearTimeout(alertTimeout);
   alertTimeout = setTimeout(() => {
-    element.classList.add("hidden");
-  }, 2000);
+    alertbox.classList.add("hidden");
+  }, 3000);
 }
