@@ -24,7 +24,7 @@ Uma simulação de lista de compras da semana. O usuário pode adicionar novos i
 1. Clone o repositório:
 
 ```bash
-git clone "link do repositorio"
+git clone https://github.com/guilhermexpc/rocketseat-fs-desafio-lista-de-compra.git
 ```
 
 2. Abra o arquivo `index.html` no navegador.
