@@ -2,7 +2,7 @@
 
 Uma simulação de lista de compras da semana. O usuário pode adicionar novos itens, marcar produtos como comprados e excluir itens da lista.
 
-![Screenshot do projeto](screenshot-project.png)
+![Screenshot do projeto](screenshot-project2.png)
 
 ## Funcionalidades
 
